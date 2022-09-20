@@ -1,0 +1,74 @@
+:root {
+  --green: #27ae60;
+  --dark-green: #219150;
+  --grey: #444;
+  --light-color: #666;
+  --secondary-color: #ffffff;
+  --light-blue: hsl(220, 14%, 75%);
+  --black: rgb(0, 0, 0);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --primary-font: "Kumbh Sans", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+}
+
+footer {
+  width: 100%;
+  margin-top: 2em;
+  background-color: var(--black);
+  padding: 1em;
+  text-align: start;
+  color: var(--dark-green);
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+footer div h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer div ul {
+  list-style: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer div ul li {
+  padding-top: 0.8em;
+}
+
+footer div ul li a {
+  color: var(--secondary-color) !important;
+  font-family: var(--primary-font);
+  text-transform: none;
+}
+
+footer p {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  margin-top: 2em;
+}
+
+.date {
+  color: var(--secondary-color);
+}
+
+.year {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+@media (min-width: 800px) {
+  footer {
+    padding: 2em 0 2em 4em;
+  }
+
+  footer > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

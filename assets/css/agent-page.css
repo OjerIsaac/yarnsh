@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #27ae60;
+  --dark-green: #219150;
+  --grey: #444;
+  --light-color: #666;
+  --secondary-color: #ffffff;
+  --light-blue: hsl(220, 14%, 75%);
+  --black: rgb(0, 0, 0);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --primary-font: "Kumbh Sans", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+}
+
+body{
+  font-family: var(--primary-font);
+}
+
+main {
+  margin-top: 7rem;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+
+.agents-container {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.agent-card {
+  padding: 0 1em;
+  width: 100%;
+}
+
+.agent-info {
+}
+
+.agent-info h3 {
+  margin-bottom: 1rem;
+}
+
+.agent-info h4 span {
+  color: var(--dark-green);
+  margin-left: 0.5rem;
+}
+
+.agent-card img {
+  display: block;
+  width: 16em;
+  height: 15rem;
+  border: 2px solid var(--dark-green);
+  margin-bottom: .5em;
+}
+
+.vacancy-discription {
+  width: 100%;
+  height: 100%;
+}
+
+ol{
+  padding-left: 2em;
+}
+
+.see-more-vacancy-btn{
+  background-color: var(--dark-green);
+  width: 100%;
+  max-width: 10em;
+  padding: .3em 1em;
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 1em;
+}
+
+
+@media (min-width: 500px) {
+  .agent-card {
+    display: flex;
+   
+    gap: 1em;
+  }
+
+  .vacancies-list{
+    height: 15rem;
+  }
+}

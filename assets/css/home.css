@@ -1,0 +1,178 @@
+/*====  Rebranded version written Monday|15th|November|2021  ====*/
+/*====  Written Ojerumu P. Isaac  ====*/
+
+/*==========  Table of contents  ========
+ 1. Global styles
+ 2. Header sections
+ 3. Main section
+ 4. Responsive
+==========  Table of contents ends  ========*/
+
+
+/*====  Global Styles  ===*/
+:root {
+ --green: #27ae60;
+ --dark-green: #219150;
+ --black: #444;
+ --light-color: #666;
+ --border: .1rem solid rgba(0, 0, 0, .1);
+ --border-hover: .1rem solid var(--black);
+ --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}  
+* {
+ font-family: 'Segoe UI', sans-serif;
+ margin: 0; padding: 0;
+ box-sizing: border-box;
+ outline: none; border: none;
+ text-decoration: none!important;
+ text-transform: none!important;
+ transition: all .2s linear;
+ transition: width none;
+} 
+html {
+ font-size: 1rem;
+ overflow-x: hidden;
+ scroll-padding-top: 5rem;
+ scroll-behavior: smooth;
+} 
+html::-webkit-scrollbar {
+ width: 1rem;
+}  
+html::-webkit-scrollbar-track {
+ background: transparent;
+}  
+html::-webkit-scrollbar-thumb {
+ background: var(--black);
+}
+.btn-2 {
+ margin: 1rem 0;
+ display: inline-block;
+ padding: .5rem 3rem;
+ border-radius: .5rem;
+ color: #fff;
+ background: var(--green);
+ font-size: 1.2rem;
+ font-weight: 600;
+ cursor: pointer;
+}
+.btn-2:hover,
+.btn-2:active {
+ background: var(--dark-green);
+ color: #fff;
+ font-weight: 600;
+}
+/*====  Global Styles section ends  ===*/
+      
+      
+/*====  Header sections  ====*/
+.header .header-1 {
+ background: #fff;
+ padding: 1rem 12px;
+ display: flex;
+ align-items: center;
+ box-shadow: var(--box-shadow);
+ justify-content: space-between;
+}
+/* Js class */
+.header .header-1.active {
+ position: fixed;
+ top: 0; right: 0; left: 0;
+ z-index: 100;
+}
+/* Js class */
+.nav-item a {
+ font-size: .9rem;
+ background: var(--green);
+ color: #fff;
+ margin: .3rem; padding: .5rem;
+ border-radius: 10px;
+ text-align: center;
+}
+/*====  Header sections  ====*/
+
+
+/*====  Main sections  ====*/
+.main {
+ padding: 2rem 3%;
+}
+.box {
+ border: var(--border);
+ box-shadow: var(--box-shadow);
+ border-radius: .5rem;
+ overflow: hidden;
+ background: #fff;
+ text-align: center;
+ padding: 0 2rem;
+ width: 600px;
+ margin-bottom: 6rem!important;
+}
+.profile-pic {
+ padding: 2rem;
+}
+.box img {
+ height: 150px;
+ width: 150px;
+ border-radius: 50%;
+ object-fit: contain;
+}
+.head {
+ padding: .5rem;
+ border-right: 1px solid #444;
+}
+.pg {
+ margin-left: 6rem; padding: .5rem;
+}
+.field {
+ display: block;
+ border: var(--border);
+ width: 100%;
+ padding: .4rem;
+ border-radius: .3rem;
+}
+/*====  Main sections  ====*/
+
+
+
+
+
+
+
+
+   
+/*=====  Responsive  =====*/
+@media screen and (max-width:991px) {
+    html {
+        font-size: 1rem;
+    }
+    .header .header-1 {
+        padding: .5rem 8px;
+    }
+}
+
+
+@media screen and (min-width:991px) {
+    .main {
+        padding: 5rem 6%;
+    }
+}
+   
+   
+@media screen and (max-width:768px) {
+    html {
+        scroll-padding-top: 0;
+    }
+    body {
+        padding-bottom: 4rem;
+    }
+    .header .header-1 {
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+}
+   
+   
+@media screen and (max-width:460px) {
+    html {
+        font-size: .9rem;
+    } 
+}

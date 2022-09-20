@@ -1,0 +1,146 @@
+/*==========  Table of contents  ========
+ 1. Global styles
+ 2. Header section
+ 3. Body section
+ 4. Responsive section
+==========  Table of contents ends  ========*/
+
+
+/*====  Global Styles  ===*/
+:root {
+ --green: #27ae60;
+ --dark-green: #219150;
+ --black: #444;
+ --light-color: #666;
+ --border: .1rem solid rgba(0, 0, 0, .1);
+ --border-hover: .1rem solid var(--black);
+ --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+ --background: rgba(0, 0, 0, .3);
+}  
+* {
+ font-family: 'Segoe UI', sans-serif;
+ margin: 0; padding: 0;
+ box-sizing: border-box;
+ outline: none; border: none;
+ text-decoration: none!important;
+ text-transform: none!important;
+ transition: all .2s linear;
+ transition: width none;
+}  
+html {
+ font-size: 1rem;
+ overflow-x: hidden;
+ scroll-padding-top: 5rem;
+ scroll-behavior: smooth;
+} 
+html::-webkit-scrollbar {
+ width: 1rem;
+}  
+html::-webkit-scrollbar-track {
+ background: transparent;
+}  
+html::-webkit-scrollbar-thumb {
+ background: var(--black);
+}
+.btt {
+ margin-bottom: 1rem;
+ display: inline-block;
+ padding: .5rem 3rem;
+ border-radius: .5rem;
+ color: #fff;
+ background: var(--green);
+ font-size: 1.2rem;
+ font-weight: 600;
+ cursor: pointer;
+ outline: transparent!important;
+ border: transparent!important;
+ box-shadow: none!important;
+}
+.btt:hover,
+.btt:active {
+ background: var(--dark-green);
+ color: #fff;
+ font-weight: 600;
+}
+/*====  Global Styles section ends  ===*/
+   
+   
+/*====  Header-1  ====*/
+.header .header-1 {
+ background: #fff;
+ padding: 1rem 12px;
+ display: flex;
+ align-items: center;
+ box-shadow: var(--box-shadow);
+ justify-content: space-between;
+}
+/* Js class */
+.header .header-1.active {
+ position: fixed;
+ top: 0; right: 0; left: 0;
+ z-index: 100;
+}
+/* Js class */
+
+
+/*======= Body section =====*/
+.list {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 2.3rem;
+ padding: 1rem;
+ position: relative;
+ margin-top: 1.5rem;
+}
+.list .box {
+ border: var(--border);
+ box-shadow: var(--box-shadow);
+ border-radius: .5rem;
+ overflow: hidden;
+ background: #fff;
+ flex: 1 1 30rem;
+}
+.list .box .box-content {
+ padding: 1rem;
+}
+.title {
+ text-align: center;
+}
+.title h3 {
+ color: var(--green);
+ font-size: 1.5rem;
+ text-transform: none;
+}
+/*======= Body section ends =====*/
+   
+   
+   
+   
+   
+/*=====  Responsive  =====*/
+@media screen and (max-width:991px) {
+    html {
+        font-size: 1rem;
+    }
+    .header .header-1 {
+        padding: .5rem 8px;
+    }
+}
+   
+   
+@media screen and (max-width:768px) {
+    html {
+        scroll-padding-top: 0;
+    }
+    .header .header-1 {
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+}
+   
+   
+@media screen and (max-width:455px) {
+    html {
+        font-size: .95rem;
+    }
+}

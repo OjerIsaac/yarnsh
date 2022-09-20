@@ -1,0 +1,171 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+button {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  z-index: 2;
+  background-color: black;
+
+}
+
+.logo-and-desktop-links-container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--black);
+  padding: 0 1.5em;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-nav {
+  position: relative;
+  width: 60%;
+  height: 100vh;
+  background-color: var(--black);
+  transform: translateX(-500px);
+}
+
+.mobile-nav ul {
+  padding-top: 3em;
+  padding-left: .45rem;
+}
+
+.mobile-nav ul li {
+  padding: 0.2rem .35rem;
+}
+
+.mobile-nav ul li:hover {
+  background-color: var(--dark-green);
+}
+
+.mobile-nav ul li button {
+  background-color: transparent;
+}
+
+.mobile-nav ul li a {
+  color: var(--dark-green);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mobile-nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: relative;
+  top: 5em;
+  left: 80%;
+  z-index: 5;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px;
+  color: var(--dark-green);
+}
+
+#close-mobile-nav-btn {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  background-color: lightgray;
+  height: 1em;
+  width: 1em;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--dark-green);
+  font-size: 16px;
+}
+
+.desktop-nav {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.desktop-nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav ul button {
+  background-color: transparent;
+}
+
+.desktop-nav ul li button a {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.add-Border-bottom {
+  border-bottom: 5px solid var(--dark-green);
+}
+@media (min-width: 800px) {
+  header {
+    height: 5em;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .logo-and-desktop-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-and-desktop-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .logo img {
+    width: 50%;
+    margin: 0 0;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
